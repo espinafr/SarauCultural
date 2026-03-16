@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "DelaGothicOne";
+    src: url(static/fonts/Dela_Gothic_One/DelaGothicOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(static/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #0095ff transparent;
+}
+
+body {
+    background-image: url(static/images/paper.png);
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(static/images/Hero.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-image: url(static/images/Grafite.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quadradinho {
+    background-color: white;
+    border: #0C8CE9 solid 4px;
+    width: 12px;
+    height: 12px;
+}
+
+#fotoPessoas {
+    rotate: 4deg;
+}
+
+#TELAPRETA {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+@media (width >= 48rem) {
+    footer {
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+    #TELAPRETA {
+        display: flex;
+    }
+}
