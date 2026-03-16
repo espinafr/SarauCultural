@@ -240,14 +240,50 @@
   .-my-\[10vh\] {
     margin-block: calc(10vh * -1);
   }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-12\.5 {
+    margin-top: calc(var(--spacing) * 12.5);
+  }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
+  .mt-75 {
+    margin-top: calc(var(--spacing) * 75);
+  }
   .mt-\[2vh\] {
     margin-top: 2vh;
   }
   .mt-\[15vh\] {
     margin-top: 15vh;
   }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
   .mt-\[30vh\] {
     margin-top: 30vh;
+  }
+  .mt-\[35vh\] {
+    margin-top: 35vh;
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
+  .mt-\[50vh\] {
+    margin-top: 50vh;
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
+  .mt-\[200px\] {
+    margin-top: 200px;
+  }
+  .mt-\[300px\] {
+    margin-top: 300px;
+  }
+  .mt-\[500px\] {
+    margin-top: 500px;
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
@@ -272,6 +308,9 @@
   }
   .flex {
     display: flex;
+  }
+  .table {
+    display: table;
   }
   .h-\[95\%\] {
     height: 95%;
@@ -300,11 +339,17 @@
   .w-screen {
     width: 100vw;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .rotate-90 {
     rotate: 90deg;
   }
   .rotate-270 {
     rotate: 270deg;
+  }
+  .resize {
+    resize: both;
   }
   .list-disc {
     list-style-type: disc;
@@ -347,6 +392,10 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-4 {
     border-style: var(--tw-border-style);
@@ -433,6 +482,9 @@
   .text-\[\#00295E\] {
     color: #00295E;
   }
+  .text-gray-100 {
+    color: var(--color-gray-100);
+  }
   .text-gray-100\/55 {
     color: color-mix(in srgb, oklch(96.7% 0.003 264.542) 55%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -442,9 +494,21 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .select-none {
     -webkit-user-select: none;
     user-select: none;
+  }
+  .md\:mt-\[35vh\] {
+    @media (width >= 48rem) {
+      margin-top: 35vh;
+    }
   }
   .md\:mt-\[50vh\] {
     @media (width >= 48rem) {
@@ -651,6 +715,11 @@ footer {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -658,6 +727,7 @@ footer {
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
+      --tw-outline-style: solid;
     }
   }
 }
