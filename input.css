@@ -23,11 +23,12 @@ html, body {
 
 body {
     background-image: url(static/images/paper.png);
+    background-color: #f7f7f7;
     overflow-x: hidden;
 }
 
-header {
-    background-image: url(static/images/Hero.png);
+#mainHero {
+    background-image: url(static/images/Hero.webp);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,4 +77,18 @@ footer {
     #TELAPRETA {
         display: flex;
     }
+}
+
+button.ativado {
+    cursor: pointer;
+    background-color: #0C8CE9;
+    color: white;
+    transition: .2s;
+}
+
+button.desativado {
+    cursor: not-allowed;
+    background-color: #00295E;
+    color: rgb(119, 119, 119);
+    transition: .2s;
 }
