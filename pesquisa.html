@@ -16,7 +16,8 @@
             </div>
         </div>
     </header>
-    <section class="flex flex-col items-center gap-5 relative">
+    <section class="flex flex-col items-center gap-5">
+        <div class="absolute hidden lg:block top-0 right-0 rotate-180 -z-1 select-none"><img src="static/images/Dots.svg" aria-disabled="true"></div>
         <p class="text-justify lg:text-center max-w-[85vw] lg:max-w-[65vw] lg:text-xl leading-[145%] tracking-wide">Agradecemos o interesse em participar da pesquisa! <b>Ela só tem 3 perguntas e não leva mais que 5 minutos</b>, então por favor leia atentamente todos os itens aqui dispostos a fim de entender todo o funcionamento do evento. Tenha em mente que essa pesquisa é essencial para a organização e criação oficial do Sarau Cultural UniAnchieta. Sua participação é imprescindível para tornar esse projeto possível!</p>
         <div class="relative flex flex-col gap-5 border-[#0C8CE9] border-solid lg:border-4 lg:max-w-[65vw] py-3 px-6">
             <div class="quadradinho hidden lg:block -top-2 -left-2"></div>
@@ -43,58 +44,59 @@
             <p class="text-xl">Tendo lido todas as informações acima, por favor responda:</p>
         </div>
         <form action="" method="POST" id="formQuestionario" class="flex flex-col items-center gap-5 lg:text-xl leading-[145%] text-center tracking-wide max-w-[55vw] mb-[5vh]">
-                <div class="flex flex-col lg:flex-row gap-[5vw]">
-                    <div class="relative flex flex-col items-center justify-between gap-5 border-[#0C8CE9] border-solid border-4 py-3 px-6 w-[75vw] lg:w-[17vw] h-[3h]">
-                        <div class="quadradinho absolute -top-2 -left-2"></div>
-                        <div class="quadradinho absolute -top-2 -right-2"></div>
-                        <div class="quadradinho absolute -bottom-2 -left-2"></div>
-                        <div class="quadradinho absolute -bottom-2 -right-2"></div>
-                        <div class="flex items-center justify-center flex-1">
-                            <p><span class="font-bold">1. </span>Você tem interesse em participar? Seja como espectador ou performador.<span class="text-red-600"> *</span></p>
-                        </div>
-                        <div>
-                            <div class="text-xl lg:text-2xl">
-                                <input required type="radio" name="primeira" id="1sim" value="sim" class="w-4 h-4 lg:w-6 lg:h-6">
-                                <label for="1sim">Sim</label>
-                            </div>
-                            <div class="text-xl lg:text-2xl mt-2">
-                                <input required type="radio" name="primeira" id="1nao" value="nao" class="w-4 h-4 lg:w-6 lg:h-6">
-                                <label for="1nao">Não</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative flex flex-col items-center justify-between gap-5 border-[#0C8CE9] border-solid border-4 py-3 px-6 w-[75vw] lg:w-[17vw] h-[3h]">
-                        <div class="quadradinho absolute -top-2 -left-2"></div>
-                        <div class="quadradinho absolute -top-2 -right-2"></div>
-                        <div class="quadradinho absolute -bottom-2 -left-2"></div>
-                        <div class="quadradinho absolute -bottom-2 -right-2"></div>
-                        <div class="flex items-center justify-center flex-1">
-                            <p><span class="font-bold">2. </span>Você esta disposto a levar 1kg de alimento não perecível (que será destinado para doação) como ingresso?<span class="text-red-600"> *</span></p>
-                        </div>
-                        <div>
-                            <div class="text-xl lg:text-2xl">
-                                <input required type="radio" name="segunda" id="2sim" value="sim" class="w-4 h-4 lg:w-6 lg:h-6">
-                                <label for="22sim">Sim</label>
-                            </div>
-                            <div class="text-xl lg:text-2xl mt-2">
-                                <input required type="radio" name="segunda" id="2nao" value="nao" class="w-4 h-4 lg:w-6 lg:h-6">
-                                <label for="2nao">Não</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative flex flex-col items-center justify-between gap-3 border-[#0C8CE9] border-solid border-4 py-3 px-6 w-[75vw] lg:w-full h-[3h]">
+            <div class="absolute hidden lg:block bottom-0 left-0 -z-1 select-none"><img src="static/images/Dots.svg" aria-disabled="true"></div>
+            <div class="flex flex-col lg:flex-row gap-[5vw]">
+                <div class="relative flex flex-col items-center justify-between gap-5 border-[#0C8CE9] border-solid border-4 py-3 px-6 w-[75vw] lg:w-[17vw] h-[3h]">
                     <div class="quadradinho absolute -top-2 -left-2"></div>
                     <div class="quadradinho absolute -top-2 -right-2"></div>
                     <div class="quadradinho absolute -bottom-2 -left-2"></div>
                     <div class="quadradinho absolute -bottom-2 -right-2"></div>
                     <div class="flex items-center justify-center flex-1">
-                        <p><span class="font-bold">3. </span>Para fins de apuração de respostas, insira seu email institucional (suas respostas permanecerão privadas e seu email não será divulgado em nenhum momento)<span class="text-red-600"> *</span></p>
+                        <p><span class="font-bold">1. </span>Você tem interesse em participar? Seja como espectador ou performador.<span class="text-red-600"> *</span></p>
                     </div>
-                    <input required oninput="checarRegexEmail(this)" autocomplete="email" type="email" name="email" id="emailInput" placeholder="email@institucional.aqui" class="w-[95%] text-center bg-[#0C8CE9]/10 border-2 border-solid border-[#0C8CE9]/50 rounded">
+                    <div>
+                        <div class="text-xl lg:text-2xl">
+                            <input required type="radio" name="primeira" id="1sim" value="sim" class="w-4 h-4 lg:w-6 lg:h-6">
+                            <label for="1sim">Sim</label>
+                        </div>
+                        <div class="text-xl lg:text-2xl mt-2">
+                            <input required type="radio" name="primeira" id="1nao" value="nao" class="w-4 h-4 lg:w-6 lg:h-6">
+                            <label for="1nao">Não</label>
+                        </div>
+                    </div>
                 </div>
-                <button id="enviarform" type="submit" class="py-[.75vh] px-[3vw] font-lg font-bold cursor-pointer desativado" disabled>ENVIAR</button>
-            </form>
+                <div class="relative flex flex-col items-center justify-between gap-5 border-[#0C8CE9] border-solid border-4 py-3 px-6 w-[75vw] lg:w-[17vw] h-[3h]">
+                    <div class="quadradinho absolute -top-2 -left-2"></div>
+                    <div class="quadradinho absolute -top-2 -right-2"></div>
+                    <div class="quadradinho absolute -bottom-2 -left-2"></div>
+                    <div class="quadradinho absolute -bottom-2 -right-2"></div>
+                    <div class="flex items-center justify-center flex-1">
+                        <p><span class="font-bold">2. </span>Você esta disposto a levar 1kg de alimento não perecível (que será destinado para doação) como ingresso?<span class="text-red-600"> *</span></p>
+                    </div>
+                    <div>
+                        <div class="text-xl lg:text-2xl">
+                            <input required type="radio" name="segunda" id="2sim" value="sim" class="w-4 h-4 lg:w-6 lg:h-6">
+                            <label for="22sim">Sim</label>
+                        </div>
+                        <div class="text-xl lg:text-2xl mt-2">
+                            <input required type="radio" name="segunda" id="2nao" value="nao" class="w-4 h-4 lg:w-6 lg:h-6">
+                            <label for="2nao">Não</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex flex-col items-center justify-between gap-3 border-[#0C8CE9] border-solid border-4 py-3 px-6 w-[75vw] lg:w-full h-[3h]">
+                <div class="quadradinho absolute -top-2 -left-2"></div>
+                <div class="quadradinho absolute -top-2 -right-2"></div>
+                <div class="quadradinho absolute -bottom-2 -left-2"></div>
+                <div class="quadradinho absolute -bottom-2 -right-2"></div>
+                <div class="flex items-center justify-center flex-1">
+                    <p><span class="font-bold">3. </span>Para fins de apuração de respostas, insira seu email institucional (suas respostas permanecerão privadas e seu email não será divulgado em nenhum momento)<span class="text-red-600"> *</span></p>
+                </div>
+                <input required oninput="checarRegexEmail(this)" autocomplete="email" type="email" name="email" id="emailInput" placeholder="email@institucional.aqui" class="w-[95%] text-center bg-[#0C8CE9]/10 border-2 border-solid border-[#0C8CE9]/50 rounded">
+            </div>
+            <button id="enviarform" type="submit" class="py-[.75vh] px-[3vw] font-lg font-bold cursor-pointer desativado" disabled>ENVIAR</button>
+        </form>
     </section>
     <script>
         const botaosubmit = document.querySelector("#enviarform");

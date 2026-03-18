@@ -200,6 +200,9 @@
   .-top-10 {
     top: calc(var(--spacing) * -10);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-\[50\%\] {
     top: 50%;
   }
@@ -208,6 +211,9 @@
   }
   .-right-3 {
     right: calc(var(--spacing) * -3);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
   }
   .right-50 {
     right: calc(var(--spacing) * 50);
@@ -221,11 +227,17 @@
   .-bottom-\[50\%\] {
     bottom: calc(50% * -1);
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .-left-2 {
     left: calc(var(--spacing) * -2);
   }
   .-left-10 {
     left: calc(var(--spacing) * -10);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .-z-1 {
     z-index: calc(1 * -1);
@@ -316,6 +328,9 @@
   }
   .rotate-90 {
     rotate: 90deg;
+  }
+  .rotate-180 {
+    rotate: 180deg;
   }
   .rotate-270 {
     rotate: 270deg;
