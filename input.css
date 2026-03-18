@@ -46,6 +46,7 @@ footer {
     border: #0C8CE9 solid 4px;
     width: 12px;
     height: 12px;
+    position: absolute;
 }
 
 #fotoPessoas {
@@ -79,14 +80,14 @@ footer {
     }
 }
 
-button.ativado {
+button[type="submit"]:not(button[type="submit"].desativado) {
     cursor: pointer;
     background-color: #0C8CE9;
     color: white;
     transition: .2s;
 }
 
-button.desativado {
+button[type="submit"].desativado {
     cursor: not-allowed;
     background-color: #00295E;
     color: rgb(119, 119, 119);
