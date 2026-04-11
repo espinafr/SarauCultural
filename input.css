@@ -53,21 +53,6 @@ footer {
     rotate: 4deg;
 }
 
-#TELAPRETA {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-align: center;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-
 @media (width >= 48rem) {
     footer {
         background-size: contain;
