@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Sarau cultural</title>
 </head>
-<body>
+<body class="relative">
     <header id="mainHero" class="h-screen md:h-[110vh] w-screen flex flex-col justify-center items-center text-white overflow-hidden">
         <div class="flex flex-col justify-center items-center mb-[5vh]">
             <p class="text-gray-100/55 text-lg md:text-xl 2xl:text-2xl mb-[2vh]">PESQUISA DE APROVAÇÃO</p>
@@ -20,7 +20,14 @@
             <a href="pesquisa.html" rel="next" class="bg-black rounded-2xl py-[.5em] w-[90vw] md:w-[12em] text-lg 2xl:text-xl font-bold">PESQUISA</a>
         </div>
     </header>
-    <section class="flex flex-col items-center gap-5 mx-10 relative overflow-hidden">
+    <div class="absolute -z-1 select-none w-full h-full top-0 left-0 overflow-hidden" aria-disabled="true">
+        <img class="absolute hidden lg:block top-[30%] right-0 rotate-270" src="static/images/Dots.svg" alt="">
+        <img class="absolute top-[30%] left-0" src="static/images/Dots.svg" alt="">
+        <img class="absolute bottom-[50vh] right-0 rotate-90" src="static/images/Dots.svg" alt="">
+        <img class="absolute -bottom-[50vh] right-0 rotate-270" src="static/images/Dots.svg" alt="">
+        <img class="absolute hidden lg:block bottom-0 left-0" src="static/images/Dots.svg" alt="">
+    </div>
+    <section class="flex flex-col items-center gap-5 mx-10 relative">
         <div data-proporcaox="421" data-proporcaoy="724" id="fotoPessoas" class="lg:absolute border-[#0C8CE9] border-solid border-4 -right-3 -top-10 lg:max-w-[40vw]">
             <div class="quadradinho -top-2 -left-2"></div>
             <div class="quadradinho -top-2 -right-2"></div>
@@ -28,8 +35,6 @@
             <div class="quadradinho -bottom-2 -right-2"></div>
             <img src="static/images/Pessoas.webp" alt="Pessoas em pé de costas assistindo ao sarau">
         </div>
-        <div class="absolute top-[50%] -left-10 -z-1 select-none contain-paint"><img src="static/images/Dots.svg" aria-disabled="true"></div>
-        <div class="absolute -top-10 right-50 rotate-270 -z-1 select-none contain-paint"><img src="static/images/Dots.svg" aria-disabled="true"></div>
         <div class="flex flex-col gap-3 md:gap-7">
             <h2 class="font-[DelaGothicOne] text-3xl md:text-5xl 2xl:text-6xl text-[#006FFF] tracking-wide">O QUE É?</h2>
             <div class="text-xl md:text-2xl 2xl:text-4xl lg:w-[55%] leading-[145%] tracking-wide ml-6 flex flex-col gap-2">
@@ -44,7 +49,7 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col lg:flex-row lg:justify-evenly items-center gap-10 mx-10 lg:mx-20 mt-[2vh] lg:mt-[5vh] relative overflow-hidden">
+    <section class="flex flex-col lg:flex-row lg:justify-evenly items-center gap-10 mx-10 lg:mx-20 mt-[2vh] lg:mt-[5vh] relative">
         <div id="fotoDanca" class="relative border-[#0C8CE9] border-solid border-4 h-[95%]">
             <div class="quadradinho -top-2 -left-2"></div>
             <div class="quadradinho -top-2 -right-2"></div>
@@ -52,15 +57,12 @@
             <div class="quadradinho -bottom-2 -right-2"></div>
             <img src="static/images/Danca.webp" alt="Pessoas com o rosto escuro em cima de um palco com luzes roxas atrás">
         </div>  
-        <div class="absolute -top-10 right-50 rotate-90 -z-1 select-none contain-paint"><img src="static/images/Dots.svg" aria-disabled="true"></div>
         <div class="flex flex-col gap-7 md:text-center lg:text-left lg:mb-20 lg:w-[70%]">
             <h2 class="font-[DelaGothicOne] text-3xl md:text-5xl 2xl:text-6xl md:text-center text-[#006FFF] tracking-wide">OBJETIVO</h2>
             <p class="indent-8 text-xl md:text-2xl 2xl:text-4xl leading-[145%] justify-self-center tracking-wide">Com inspiração no grande sarau da EtecVAV, nós, alunos do UniAnchieta, queremos tornar esse evento parte da cultura da faculdade, mas agora com um propósito voltado para ação solidária, arrecandando alimentos não perecíveis para doação.</p>
         </div>
     </section>
     <footer class="py-10 md:py-auto md:h-screen flex justify-center items-center flex-col gap-4 relative overflow-hidden text-center">
-        <div class="absolute -bottom-[25%] -left-10 -z-1 select-none contain-paint"><img src="static/images/Dots.svg" aria-disabled="true"></div>
-        <div class="absolute -bottom-[50%] right-50 rotate-270 -z-1 select-none contain-paint"><img src="static/images/Dots.svg" aria-disabled="true"></div>
         <h1 class="font-[DelaGothicOne] text-4xl md:text-5xl 2xl:text-6xl text-[#00295E]">QUER TORNAR POSSÍVEL?</h1>
         <a href="pesquisa.html" rel="next" class="bg-[#00295E] rounded-2xl py-[.45em] w-[13em] text-2xl md:text-3xl 2xl:text-5xl text-center font-bold text-white">Responda a pesquisa!</a>
     </footer>
